@@ -10,9 +10,11 @@
 原始的测试文件在icwb2-data/testing/msr_test.utf8中，利用programs中提供的```Make_crf_test_data.py```将测试文件转换为crf格式。使用命令```crf_test -m crf_model msr_test4crf.utf8 > msr_test4crf.tag.utf8```来对测试文件进行标注。crf_model为训练生成的模型文件，msr_test4crf.utf8为转换格式后的测试文件，msr_test4crf.tag.utf8为标注后的测试文件。标注后我们还需要将crf格式的测试文件转换为分词后的文本，方便后面进行准确率和召回率的测试。运行programs中crf_data_2_word.py文件，执行```python crf_data_2_word.py msr_test4crf.tag.utf8 msr_test4crf.tag2word.utf8```即可得到合并后的分词结果文件 msr_test4crf.tag2word.utf8。
 ## 五、分词效果评判
 现在可以利用bakeoff2005提供的测试脚本来进行评判了，需要准备多个文件。 
-这三个文件在/icwb2-data压缩文件包中
+前面三个文件在/icwb2-data压缩文件包中，后面的我们前面得到的分词结果文件。
 * /icwb2-data/scripts/score 
 * /icwb2-data/gold/msr_training_words.utf8
 * /icwb2-data/gold/msr_test_gold.utf8 
-这是我们前面得到的分词结果文件
-* msr_test4crf.tag2word.utf8
+* msr_test4crf.tag2word.utf8  
+在终端目录下面执行```./score msr_training_words.utf8 msr_test_gold.utf8 msr_test4crf.tag2word.utf8 > msr_crf_segment.score```  
+## 六、查看结果
+打开msr_crf_segment.score，文件最后将有最终的结果。
