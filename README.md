@@ -18,4 +18,17 @@
 
 执行```./score msr_training_words.utf8 msr_test_gold.utf8 msr_test4crf.tag2word.utf8 > msr_crf_segment.score```  
 ## 六、查看结果
-打开msr_crf_segment.score，文件最后将有最终的结果。
+打开msr_crf_segment.score，文件最后将有最终的结果。 
+>=== SUMMARY:
+=== TOTAL INSERTIONS:	1419
+=== TOTAL DELETIONS:	1285
+=== TOTAL SUBSTITUTIONS:	2440
+=== TOTAL NCHANGE:	5144
+=== TOTAL TRUE WORD COUNT:	106873
+=== TOTAL TEST WORD COUNT:	107007
+=== TOTAL TRUE WORDS RECALL:	0.965
+=== TOTAL TEST WORDS PRECISION:	0.964
+=== F MEASURE:	0.965
+=== OOV Rate:	0.026
+=== OOV Recall Rate:	0.649
+=== IV Recall Rate:	0.974
