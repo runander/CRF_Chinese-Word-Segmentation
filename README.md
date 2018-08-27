@@ -32,4 +32,5 @@
 === OOV Rate:	0.026  
 === OOV Recall Rate:	0.649  
 === IV Recall Rate:	0.974  
-![Training](Training.png)
+
+![Training](/Training.png)
