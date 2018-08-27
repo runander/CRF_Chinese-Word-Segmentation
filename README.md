@@ -13,6 +13,6 @@
 这三个文件在/icwb2-data压缩文件包中
 * /icwb2-data/scripts/score 
 * /icwb2-data/gold/msr_training_words.utf8
-* /icwb2-data/gold/msr_test_gold.utf8
+* /icwb2-data/gold/msr_test_gold.utf8 
 这是我们前面得到的分词结果文件
 * msr_test4crf.tag2word.utf8
