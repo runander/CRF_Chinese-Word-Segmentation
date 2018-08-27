@@ -15,6 +15,6 @@
 * /icwb2-data/gold/msr_training_words.utf8
 * /icwb2-data/gold/msr_test_gold.utf8 
 * msr_test4crf.tag2word.utf8  
-在终端目录下面执行```./score msr_training_words.utf8 msr_test_gold.utf8 msr_test4crf.tag2word.utf8 > msr_crf_segment.score```  
+执行```./score msr_training_words.utf8 msr_test_gold.utf8 msr_test4crf.tag2word.utf8 > msr_crf_segment.score```  
 ## 六、查看结果
 打开msr_crf_segment.score，文件最后将有最终的结果。
